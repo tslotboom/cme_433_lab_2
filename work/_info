@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/ths943/engr-ece
+vcla_1_bit
+Z0 !s110 1633474078
+!i10b 1
+!s100 SV=6jP8L<c_5<dcYVgZ[E0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IcJ;G2fdOC4^RZEEkk0YOQ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2
+w1633472107
+8/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit.v
+F/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit.v
+!i122 59
+L0 1 16
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1633474078.000000
+!s107 /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vcla_1_bit_testbench
+R0
+!i10b 1
+!s100 lV[hbk@F9K:W6=0c]`Ion0
+R1
+IoH@F1iBH7>UPJi8TBkAX30
+R2
+R3
+w1633471148
+8/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit_testbench.v
+F/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit_testbench.v
+!i122 60
+L0 2 15
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit_testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit_testbench.v|
+!i113 1
+R6
+R7
+vcla_4_bit
+R0
+!i10b 1
+!s100 f@eP6czM[fX6TRhAg9f@C0
+R1
+I<JE[JoXVXgXQO`Tb@k8:Q1
+R2
+R3
+w1633474079
+8/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit.v
+F/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit.v
+!i122 61
+L0 1 34
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit.v|
+!i113 1
+R6
+R7
+vcla_4_bit_testbench
+R0
+!i10b 1
+!s100 fFKkZO94a53hTCGZDGnW_1
+R1
+I5`<40YX2Fi17154H9kCP83
+R2
+R3
+w1633473514
+8/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit_testbench.v
+F/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit_testbench.v
+!i122 62
+L0 2 17
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit_testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit_testbench.v|
+!i113 1
+R6
+R7
+vripple_carry_adder_1_bit
+R0
+!i10b 1
+!s100 ]dn^:oV:^M?KG7b=X`nUI3
+R1
+IQR?YN8YNDebYFLEXaSd?h3
+R2
+R3
+w1633378281
+8/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit.v
+F/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit.v
+!i122 63
+L0 1 17
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit.v|
+!i113 1
+R6
+R7
+vripple_carry_adder_1_bit_testbench
+R0
+!i10b 1
+!s100 g1[P^<j<Ym<^beRnSjBdS2
+R1
+Id?Je:524Oo^0Re3k:Yk4a2
+R2
+R3
+w1633377024
+8/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit_testbench.v
+F/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit_testbench.v
+!i122 64
+L0 2 14
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit_testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit_testbench.v|
+!i113 1
+R6
+R7
+vripple_carry_adder_32_bit
+R0
+!i10b 1
+!s100 QC0i?[0UJ57M>[La`mNEN3
+R1
+IZKHd?j8KP=4[WN``I24W@1
+R2
+R3
+w1633466218
+8/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit.v
+F/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit.v
+!i122 65
+L0 1 39
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit.v|
+!i113 1
+R6
+R7
+vripple_carry_adder_32_bit_testbench
+R0
+!i10b 1
+!s100 Zd;@C9bYR=T>1WPNie84n0
+R1
+IWZ>X>AMYXhBjPzfDkT8j_1
+R2
+R3
+w1633467616
+8/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit_testbench.v
+F/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit_testbench.v
+!i122 66
+L0 2 53
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit_testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit_testbench.v|
+!i113 1
+R6
+R7

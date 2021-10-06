@@ -1,15 +1,8 @@
 `timescale 1 ns / 1 ps
 module ripple_carry_adder_32_bit_testbench;
-    reg clk = 1'b1;
-    reg slow_clk = 1'b1;
-    always begin
-        #1;
-        clk = ~clk;
-    end
-    always begin
-        #10;
-        slow_clk = ~slow_clk;
-    end
+    wire clk, slow_clk;
+    clock clk_(clk);
+    slow_clock slow_clk_(slow_clk);
 
     // inputs
     reg [31:0] A = 32'b0;
@@ -34,15 +27,14 @@ module ripple_carry_adder_32_bit_testbench;
             @(posedge clk)
             #1
             expected_S = A + B + Cin;
-            expected_Cout = ((expected_S < A) || (expected_S < B));
+            expected_Cout = (expected_S < A) || (expected_S < B);
             // reduction OR of XNOR checks if all bits match -
             // XNOR = 1 if bits match, reduction AND evaluates to 1 only if all
             // bits are zero.
-            S_check = &(S ~^ expected_S);
+            S_check = S == expected_S;
             // XNOR evaluates to 1 if both bits are equal
-            Cout_check = Cout ~^ expected_Cout;
+            Cout_check = Cout == expected_Cout;
         end
-
 
     // test cases
     always @ (posedge slow_clk) begin

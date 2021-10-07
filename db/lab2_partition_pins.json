@@ -132,6 +132,262 @@
 					"strict" : false
 				},
 				{
+					"name" : "P_reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[10]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[11]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[12]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[13]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[14]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[15]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[16]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[17]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[18]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[19]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[20]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[21]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[22]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[23]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[24]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[25]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[26]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[27]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[28]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[29]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[30]",
+					"strict" : false
+				},
+				{
+					"name" : "P_reg[31]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[10]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[11]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[12]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[13]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[14]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[15]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[16]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[17]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[18]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[19]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[20]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[21]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[22]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[23]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[24]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[25]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[26]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[27]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[28]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[29]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[30]",
+					"strict" : false
+				},
+				{
+					"name" : "G_reg[31]",
+					"strict" : false
+				},
+				{
 					"name" : "Cout_reg",
 					"strict" : false
 				},
@@ -152,11 +408,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "A[1]",
 					"strict" : false
 				},
 				{

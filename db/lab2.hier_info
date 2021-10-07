@@ -1,4 +1,4 @@
-|ripple_carry_adder_32_bit
+|cla_32_bit
 A[0] => A_reg[0].DATAIN
 A[1] => A_reg[1].DATAIN
 A[2] => A_reg[2].DATAIN
@@ -96,8 +96,136 @@ S_reg[28] << S_reg[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 S_reg[29] << S_reg[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 S_reg[30] << S_reg[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 S_reg[31] << S_reg[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[0] << P_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[1] << P_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[2] << P_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[3] << P_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[4] << P_reg[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[5] << P_reg[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[6] << P_reg[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[7] << P_reg[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[8] << P_reg[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[9] << P_reg[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[10] << P_reg[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[11] << P_reg[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[12] << P_reg[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[13] << P_reg[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[14] << P_reg[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[15] << P_reg[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[16] << P_reg[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[17] << P_reg[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[18] << P_reg[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[19] << P_reg[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[20] << P_reg[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[21] << P_reg[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[22] << P_reg[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[23] << P_reg[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[24] << P_reg[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[25] << P_reg[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[26] << P_reg[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[27] << P_reg[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[28] << P_reg[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[29] << P_reg[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[30] << P_reg[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+P_reg[31] << P_reg[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[0] << G_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[1] << G_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[2] << G_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[3] << G_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[4] << G_reg[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[5] << G_reg[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[6] << G_reg[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[7] << G_reg[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[8] << G_reg[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[9] << G_reg[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[10] << G_reg[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[11] << G_reg[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[12] << G_reg[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[13] << G_reg[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[14] << G_reg[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[15] << G_reg[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[16] << G_reg[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[17] << G_reg[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[18] << G_reg[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[19] << G_reg[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[20] << G_reg[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[21] << G_reg[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[22] << G_reg[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[23] << G_reg[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[24] << G_reg[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[25] << G_reg[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[26] << G_reg[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[27] << G_reg[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[28] << G_reg[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[29] << G_reg[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[30] << G_reg[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G_reg[31] << G_reg[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Cout_reg << Cout_reg~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clk => Cout_reg~reg0.CLK
+clk => G_reg[0]~reg0.CLK
+clk => G_reg[1]~reg0.CLK
+clk => G_reg[2]~reg0.CLK
+clk => G_reg[3]~reg0.CLK
+clk => G_reg[4]~reg0.CLK
+clk => G_reg[5]~reg0.CLK
+clk => G_reg[6]~reg0.CLK
+clk => G_reg[7]~reg0.CLK
+clk => G_reg[8]~reg0.CLK
+clk => G_reg[9]~reg0.CLK
+clk => G_reg[10]~reg0.CLK
+clk => G_reg[11]~reg0.CLK
+clk => G_reg[12]~reg0.CLK
+clk => G_reg[13]~reg0.CLK
+clk => G_reg[14]~reg0.CLK
+clk => G_reg[15]~reg0.CLK
+clk => G_reg[16]~reg0.CLK
+clk => G_reg[17]~reg0.CLK
+clk => G_reg[18]~reg0.CLK
+clk => G_reg[19]~reg0.CLK
+clk => G_reg[20]~reg0.CLK
+clk => G_reg[21]~reg0.CLK
+clk => G_reg[22]~reg0.CLK
+clk => G_reg[23]~reg0.CLK
+clk => G_reg[24]~reg0.CLK
+clk => G_reg[25]~reg0.CLK
+clk => G_reg[26]~reg0.CLK
+clk => G_reg[27]~reg0.CLK
+clk => G_reg[28]~reg0.CLK
+clk => G_reg[29]~reg0.CLK
+clk => G_reg[30]~reg0.CLK
+clk => G_reg[31]~reg0.CLK
+clk => P_reg[0]~reg0.CLK
+clk => P_reg[1]~reg0.CLK
+clk => P_reg[2]~reg0.CLK
+clk => P_reg[3]~reg0.CLK
+clk => P_reg[4]~reg0.CLK
+clk => P_reg[5]~reg0.CLK
+clk => P_reg[6]~reg0.CLK
+clk => P_reg[7]~reg0.CLK
+clk => P_reg[8]~reg0.CLK
+clk => P_reg[9]~reg0.CLK
+clk => P_reg[10]~reg0.CLK
+clk => P_reg[11]~reg0.CLK
+clk => P_reg[12]~reg0.CLK
+clk => P_reg[13]~reg0.CLK
+clk => P_reg[14]~reg0.CLK
+clk => P_reg[15]~reg0.CLK
+clk => P_reg[16]~reg0.CLK
+clk => P_reg[17]~reg0.CLK
+clk => P_reg[18]~reg0.CLK
+clk => P_reg[19]~reg0.CLK
+clk => P_reg[20]~reg0.CLK
+clk => P_reg[21]~reg0.CLK
+clk => P_reg[22]~reg0.CLK
+clk => P_reg[23]~reg0.CLK
+clk => P_reg[24]~reg0.CLK
+clk => P_reg[25]~reg0.CLK
+clk => P_reg[26]~reg0.CLK
+clk => P_reg[27]~reg0.CLK
+clk => P_reg[28]~reg0.CLK
+clk => P_reg[29]~reg0.CLK
+clk => P_reg[30]~reg0.CLK
+clk => P_reg[31]~reg0.CLK
 clk => S_reg[0]~reg0.CLK
 clk => S_reg[1]~reg0.CLK
 clk => S_reg[2]~reg0.CLK
@@ -197,355 +325,555 @@ clk => A_reg[30].CLK
 clk => A_reg[31].CLK
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[0].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[0].c
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => C[0].IN1
+S[0] <= cla_1_bit:nate[0].c.port3
+S[1] <= cla_1_bit:nate[1].c.port3
+S[2] <= cla_1_bit:nate[2].c.port3
+S[3] <= cla_1_bit:nate[3].c.port3
+P[0] <= cla_1_bit:nate[0].c.port4
+P[1] <= cla_1_bit:nate[1].c.port4
+P[2] <= cla_1_bit:nate[2].c.port4
+P[3] <= cla_1_bit:nate[3].c.port4
+G[0] <= cla_1_bit:nate[0].c.port5
+G[1] <= cla_1_bit:nate[1].c.port5
+G[2] <= cla_1_bit:nate[2].c.port5
+G[3] <= cla_1_bit:nate[3].c.port5
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_32_bit|cla_4_bit:nate[0].c|cla_1_bit:nate[0].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[1].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[0].c|cla_1_bit:nate[1].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[2].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[0].c|cla_1_bit:nate[2].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[3].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[0].c|cla_1_bit:nate[3].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[4].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[1].c
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => C[0].IN1
+S[0] <= cla_1_bit:nate[0].c.port3
+S[1] <= cla_1_bit:nate[1].c.port3
+S[2] <= cla_1_bit:nate[2].c.port3
+S[3] <= cla_1_bit:nate[3].c.port3
+P[0] <= cla_1_bit:nate[0].c.port4
+P[1] <= cla_1_bit:nate[1].c.port4
+P[2] <= cla_1_bit:nate[2].c.port4
+P[3] <= cla_1_bit:nate[3].c.port4
+G[0] <= cla_1_bit:nate[0].c.port5
+G[1] <= cla_1_bit:nate[1].c.port5
+G[2] <= cla_1_bit:nate[2].c.port5
+G[3] <= cla_1_bit:nate[3].c.port5
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_32_bit|cla_4_bit:nate[1].c|cla_1_bit:nate[0].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[5].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[1].c|cla_1_bit:nate[1].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[6].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[1].c|cla_1_bit:nate[2].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[7].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[1].c|cla_1_bit:nate[3].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[8].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[2].c
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => C[0].IN1
+S[0] <= cla_1_bit:nate[0].c.port3
+S[1] <= cla_1_bit:nate[1].c.port3
+S[2] <= cla_1_bit:nate[2].c.port3
+S[3] <= cla_1_bit:nate[3].c.port3
+P[0] <= cla_1_bit:nate[0].c.port4
+P[1] <= cla_1_bit:nate[1].c.port4
+P[2] <= cla_1_bit:nate[2].c.port4
+P[3] <= cla_1_bit:nate[3].c.port4
+G[0] <= cla_1_bit:nate[0].c.port5
+G[1] <= cla_1_bit:nate[1].c.port5
+G[2] <= cla_1_bit:nate[2].c.port5
+G[3] <= cla_1_bit:nate[3].c.port5
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_32_bit|cla_4_bit:nate[2].c|cla_1_bit:nate[0].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[9].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[2].c|cla_1_bit:nate[1].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[10].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[2].c|cla_1_bit:nate[2].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[11].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[2].c|cla_1_bit:nate[3].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[12].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[3].c
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => C[0].IN1
+S[0] <= cla_1_bit:nate[0].c.port3
+S[1] <= cla_1_bit:nate[1].c.port3
+S[2] <= cla_1_bit:nate[2].c.port3
+S[3] <= cla_1_bit:nate[3].c.port3
+P[0] <= cla_1_bit:nate[0].c.port4
+P[1] <= cla_1_bit:nate[1].c.port4
+P[2] <= cla_1_bit:nate[2].c.port4
+P[3] <= cla_1_bit:nate[3].c.port4
+G[0] <= cla_1_bit:nate[0].c.port5
+G[1] <= cla_1_bit:nate[1].c.port5
+G[2] <= cla_1_bit:nate[2].c.port5
+G[3] <= cla_1_bit:nate[3].c.port5
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_32_bit|cla_4_bit:nate[3].c|cla_1_bit:nate[0].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[13].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[3].c|cla_1_bit:nate[1].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[14].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[3].c|cla_1_bit:nate[2].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[15].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[3].c|cla_1_bit:nate[3].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[16].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[4].c
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => C[0].IN1
+S[0] <= cla_1_bit:nate[0].c.port3
+S[1] <= cla_1_bit:nate[1].c.port3
+S[2] <= cla_1_bit:nate[2].c.port3
+S[3] <= cla_1_bit:nate[3].c.port3
+P[0] <= cla_1_bit:nate[0].c.port4
+P[1] <= cla_1_bit:nate[1].c.port4
+P[2] <= cla_1_bit:nate[2].c.port4
+P[3] <= cla_1_bit:nate[3].c.port4
+G[0] <= cla_1_bit:nate[0].c.port5
+G[1] <= cla_1_bit:nate[1].c.port5
+G[2] <= cla_1_bit:nate[2].c.port5
+G[3] <= cla_1_bit:nate[3].c.port5
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_32_bit|cla_4_bit:nate[4].c|cla_1_bit:nate[0].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[17].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[4].c|cla_1_bit:nate[1].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[18].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[4].c|cla_1_bit:nate[2].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[19].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[4].c|cla_1_bit:nate[3].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[20].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[5].c
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => C[0].IN1
+S[0] <= cla_1_bit:nate[0].c.port3
+S[1] <= cla_1_bit:nate[1].c.port3
+S[2] <= cla_1_bit:nate[2].c.port3
+S[3] <= cla_1_bit:nate[3].c.port3
+P[0] <= cla_1_bit:nate[0].c.port4
+P[1] <= cla_1_bit:nate[1].c.port4
+P[2] <= cla_1_bit:nate[2].c.port4
+P[3] <= cla_1_bit:nate[3].c.port4
+G[0] <= cla_1_bit:nate[0].c.port5
+G[1] <= cla_1_bit:nate[1].c.port5
+G[2] <= cla_1_bit:nate[2].c.port5
+G[3] <= cla_1_bit:nate[3].c.port5
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_32_bit|cla_4_bit:nate[5].c|cla_1_bit:nate[0].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[21].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[5].c|cla_1_bit:nate[1].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[22].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[5].c|cla_1_bit:nate[2].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[23].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[5].c|cla_1_bit:nate[3].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[24].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[6].c
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => C[0].IN1
+S[0] <= cla_1_bit:nate[0].c.port3
+S[1] <= cla_1_bit:nate[1].c.port3
+S[2] <= cla_1_bit:nate[2].c.port3
+S[3] <= cla_1_bit:nate[3].c.port3
+P[0] <= cla_1_bit:nate[0].c.port4
+P[1] <= cla_1_bit:nate[1].c.port4
+P[2] <= cla_1_bit:nate[2].c.port4
+P[3] <= cla_1_bit:nate[3].c.port4
+G[0] <= cla_1_bit:nate[0].c.port5
+G[1] <= cla_1_bit:nate[1].c.port5
+G[2] <= cla_1_bit:nate[2].c.port5
+G[3] <= cla_1_bit:nate[3].c.port5
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_32_bit|cla_4_bit:nate[6].c|cla_1_bit:nate[0].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[25].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[6].c|cla_1_bit:nate[1].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[26].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[6].c|cla_1_bit:nate[2].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[27].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[6].c|cla_1_bit:nate[3].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[28].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[7].c
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => C[0].IN1
+S[0] <= cla_1_bit:nate[0].c.port3
+S[1] <= cla_1_bit:nate[1].c.port3
+S[2] <= cla_1_bit:nate[2].c.port3
+S[3] <= cla_1_bit:nate[3].c.port3
+P[0] <= cla_1_bit:nate[0].c.port4
+P[1] <= cla_1_bit:nate[1].c.port4
+P[2] <= cla_1_bit:nate[2].c.port4
+P[3] <= cla_1_bit:nate[3].c.port4
+G[0] <= cla_1_bit:nate[0].c.port5
+G[1] <= cla_1_bit:nate[1].c.port5
+G[2] <= cla_1_bit:nate[2].c.port5
+G[3] <= cla_1_bit:nate[3].c.port5
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_32_bit|cla_4_bit:nate[7].c|cla_1_bit:nate[0].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[29].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[7].c|cla_1_bit:nate[1].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[30].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[7].c|cla_1_bit:nate[2].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ripple_carry_adder_32_bit|ripple_carry_adder_1_bit:nate[31].r0
-A => A_B_XOR.IN0
-A => A_B_AND.IN0
-B => A_B_XOR.IN1
-B => A_B_AND.IN1
-Cin => A_B_XOR_Cin_AND.IN1
+|cla_32_bit|cla_4_bit:nate[7].c|cla_1_bit:nate[3].c
+A => G.IN0
+A => S.IN0
+B => G.IN1
+B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+P <= S.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 

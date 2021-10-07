@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Oct  6 15:25:26 2021
+Analysis & Synthesis Status : Failed - Thu Oct  7 14:17:08 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 Revision Name : lab2
-Top-level Entity Name : ripple_carry_adder_32_bit
+Top-level Entity Name : cla_32_bit
 Family : Cyclone IV E
-Total logic elements : 148
-    Total combinational functions : 83
-    Dedicated logic registers : 98
-Total registers : 98
-Total pins : 99
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

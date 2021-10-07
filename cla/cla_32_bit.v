@@ -10,7 +10,7 @@ module cla_32_bit(
     input clk;
     input [31:0] A, B;
     input Cin;
-    reg [32:0] C;
+    reg [8:0] C;
     wire [31:0] S, P, G;
     wire Cout;
 
@@ -30,27 +30,26 @@ module cla_32_bit(
         Cout_reg <= Cout;
     end
 
-    always @ (*)
-        C[0] = Cin_reg;
+    assign C[0] = Cin_reg;
 
     integer j;
     always @ (*) begin
-        for (j = 0; j < 32; j = j + 1) begin : jate
-            C[j + 1] = G[j] | P[j] & C[j];
+        for (j = 0; j < 8; j = j + 1) begin : jate
+            C[j + 1] = G[j * 4] | P[j * 4] & C[j];
             end
     end
 
     generate
         genvar i;
-        for (i = 0; i < 4; i = i + 1) begin : nate
-            cla_16_bit c (A_reg[(i + 1) * 8 - 1:i * 8],
-                        B_reg[(i + 1) * 8 - 1:i * 8],
-                        C[(i + 1) * 8 - 1:i * 8],
-                        S[(i + 1) * 8 - 1:i * 8],
-                        P[(i + 1) * 8 - 1:i * 8],
-                        G[(i + 1) * 8 - 1:i * 8]);
+        for (i = 0; i < 8; i = i + 1) begin : nate
+            cla_4_bit c (A_reg[(i + 1) * 4 - 1:i * 4],
+                        B_reg[(i + 1) * 4 - 1:i * 4],
+                        C[i],
+                        S[(i + 1) * 4 - 1:i * 4],
+                        P[(i + 1) * 4 - 1:i * 4],
+                        G[(i + 1) * 4 - 1:i * 4]);
             end
     endgenerate
-    assign Cout = C[32];
+    assign Cout = C[8];
 
 endmodule

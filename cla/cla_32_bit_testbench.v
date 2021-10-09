@@ -6,17 +6,15 @@ module cla_32_bit_testbench;
 
     reg [31:0] A, B;
     reg Cin;
-    wire [31:0] S, P, G;
+    wire [31:0] S;
     wire Cout;
 
-    reg S_check, P_check, G_check, Cout_check;
+    reg S_check, Cout_check;
 
-    cla_32_bit adder(A,
+    cla_32_bit_adder adder(A,
             B,
             Cin,
             S,
-            P,
-            G,
             Cout,
             clk);
 
@@ -31,8 +29,6 @@ module cla_32_bit_testbench;
         @(posedge clk)
         #1;
         S_check = (A + B + Cin) == S;
-        P_check = (A ^ B) == P;
-        G_check = (A & B) == G;
         Cout_check = ((S < A) || (S < B)) == Cout;
     end
 

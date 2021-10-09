@@ -3,15 +3,16 @@ module cla_4_bit_testbench;
     reg [8:0] input_vector = 8'b0;
     wire [3:0] A, B;
     wire Cin;
-    wire [3:0] S, P, G;
+    wire [3:0] S;
+    wire P, G;
     wire Cout;
 
-    reg S_check, P_check, G_check, Cout_check;
+    reg S_check, Cout_check;
 
     assign A = input_vector[3:0];
     assign B = input_vector[7:4];
     assign Cin = input_vector[8];
-    cla_4_bit adder(A,
+    cla_4_bit_adder adder(A,
             B,
             Cin,
             S,
@@ -24,12 +25,8 @@ module cla_4_bit_testbench;
     end
     initial #10000 $stop;
     always @ * begin
-        #0
+        #1
         S_check = (A + B + Cin) == S;
-        P_check = (A ^ B) == P;
-        G_check = (A & B) == G;
-        Cout_check = (G[3] | P[3] & G[2] | P[3] & P[2] & G[1] |
-        P[3] & P[2] & P[1] & G[0] | P[3] & P[2] & P[1] & P[0] & Cin) == Cout;
-
+        Cout_check = ((S < A) || (S < B) || (A == 4'hF && B == 4'hF && Cin == 1'b1)) == Cout;
     end
 endmodule

@@ -12,13 +12,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	cla_32_bit_testbench
 
-} {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_32_bit.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_32_bit.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module cla_32_bit
-
-Top level modules:
-	cla_32_bit
-
 } {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/clk.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/clk.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module clock
@@ -47,12 +40,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	cla_1_bit_testbench
 
-} {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit.v
+} {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit_module.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit_module.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module cla_1_bit
+-- Compiling module cla_4_bit_module
 
 Top level modules:
-	cla_1_bit
+	cla_4_bit_module
 
 } {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit_testbench.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit_testbench.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -60,6 +53,20 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	ripple_carry_adder_1_bit_testbench
+
+} {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_1_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cla_1_bit
+
+Top level modules:
+	cla_1_bit
+
+} {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_32_bit_module.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_32_bit_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cla_32_bit_module
+
+Top level modules:
+	cla_32_bit_module
 
 } {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_1_bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -77,10 +84,10 @@ Top level modules:
 
 } {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/cla/cla_4_bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module cla_4_bit
+-- Compiling module cla_4_bit_adder
 
 Top level modules:
-	cla_4_bit
+	cla_4_bit_adder
 
 } {} {}} /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit_testbench.v {1 {vlog -work work -stats=none /home/ths943/engr-ece/cme/433_digital_systems_architecture/labs/lab2/rca/ripple_carry_adder_32_bit_testbench.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

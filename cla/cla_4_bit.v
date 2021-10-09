@@ -1,35 +1,40 @@
-module cla_4_bit(
+module cla_4_bit_adder(
     A,
     B,
     Cin,
     S,
-    P,
-    G,
+    Pout,
+    Gout,
     Cout);
 
     input [3:0] A, B;
     input Cin;
-    reg [4:0] C;
-    output [3:0] S, P, G;
-    output Cout;
+    wire [3:0] C;
+    output [3:0] S;
+    wire [3:0] P, G;
+    output reg Pout, Gout;
+    output reg Cout;
+
+
+
+    cla_4_bit_module cla(Cin, P, G, C);
 
     always @ (*)
-        C[0] = Cin;
+    Cout = C[3];
 
-    integer j;
-    always @ (*) begin
-        for (j = 0; j < 4; j = j + 1) begin : jate
-            C[j + 1] = G[j] | P[j] & C[j];
-            end
-    end
+    cla_1_bit c0 (A[0], B[0], Cin, S[0], P[0], G[0]);
 
     generate
         genvar i;
-        for (i = 0; i < 4; i = i + 1) begin : nate
-            cla_1_bit c (A[i], B[i], C[i], S[i], P[i], G[i]);
+        for (i = 1; i < 4; i = i + 1) begin : nate
+            cla_1_bit c (A[i], B[i], C[i - 1], S[i], P[i], G[i]);
             end
     endgenerate
 
-    assign Cout = C[4];
+    always @ *
+        Pout = P[0] & P[1] & P[2] & P[3];
+
+    always @ *
+        Gout = G[3] | (G[2] & P[3]) | (G[1] & P[3] & P[2]) | (G[0] & P[3] & P[2] & P[1]);
 
 endmodule

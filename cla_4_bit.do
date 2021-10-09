@@ -9,8 +9,6 @@ add wave -noupdate -radix hexadecimal /cla_4_bit_testbench/P
 add wave -noupdate -radix hexadecimal /cla_4_bit_testbench/G
 add wave -noupdate -radix hexadecimal /cla_4_bit_testbench/Cout
 add wave -noupdate -color Orange /cla_4_bit_testbench/S_check
-add wave -noupdate -color Orange /cla_4_bit_testbench/P_check
-add wave -noupdate -color Orange /cla_4_bit_testbench/G_check
 add wave -noupdate -color Orange /cla_4_bit_testbench/Cout_check
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
@@ -29,4 +27,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {82032 ps}
+WaveRestoreZoom {9922070 ps} {10004102 ps}
